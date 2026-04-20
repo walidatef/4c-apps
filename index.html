@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4C-Apps | الإبداع في تطوير التطبيقات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-white: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -50px auto 50px auto;
+            padding: 20px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin: 0 auto 20px auto;
+            background: #0f172a;
+            padding: 10px;
+        }
+
+        .app-card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .app-desc {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .btn-google {
+            background-color: var(--accent-color);
+            color: var(--main-bg);
+        }
+
+        .btn-support {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            filter: brightness(1.2);
+        }
+
+        .company-footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #334155;
+            margin-top: 50px;
+        }
+
+        .main-contact {
+            background: #0ea5e91a;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .main-contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.2rem; }
+            .container { margin-top: -20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>4C-Apps</h1>
+        <p>نبتكر حلولاً برمجية ذكية تجعل حياتك اليومية أسهل وأكثر تنظيماً.</p>
+    </section>
+
+    <div class="container">
+        <div class="apps-grid">
+            
+            <div class="app-card">
+                <div>
+                    <img src="tas3era_logo.png" alt="تسعيرة" class="app-icon">
+                    <h2>تطبيق تسعيرة</h2>
+                    <p class="app-desc">الأداة الأقوى لمتابعة تقلبات الأسعار، إدارة المنتجات، وتحليل السوق بجرافات بيانية احترافية.</p>
+                </div>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.walidatef.tas3eraApp" class="btn btn-google">تحميل من Google Play</a>
+                    <a href="https://t.me/Tas3eraFamilyBot" class="btn btn-support">الدعم الفني (تيليجرام)</a>
+                </div>
+            </div>
+
+            <div class="app-card">
+                <div>
+                    <img src="masarifi_logo.svg" alt="مصاريفي" class="app-icon">
+                    <h2>تطبيق مصاريفي</h2>
+                    <p class="app-desc">إدارة مالية شخصية ذكية لتتبع الدخل والمصاريف، الديون، والميزانية الشهرية بكل سهولة.</p>
+                </div>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.by4c.masarifi" class="btn btn-google">تحميل من Google Play</a>
+                    <a href="mailto:4czall@gmail.com" class="btn btn-support">دعم البريد الإلكتروني</a>
+                </div>
+            </div>
+
+            <div class="app-card">
+                <div>
+                    <img src="audio_hook_logo.svg" alt="خطاف الصوت" class="app-icon">
+                    <h2>تطبيق خطاف الصوت</h2>
+                    <p class="app-desc">تطبيق متخصص في التعامل مع الملفات الصوتية، التسجيل، وإدارة المحتوى الصوتي باحترافية.</p>
+                </div>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.by4c.audiohook" class="btn btn-google">تحميل من Google Play</a>
+                    <a href="https://t.me/4CAppsSupport" class="btn btn-support">قناة التحديثات</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="company-footer">
+            <div class="main-contact">
+                📧 للتواصل الرسمي والاستفسارات البرمجية:<br>
+                <a href="mailto:4czall@gmail.com">4czall@gmail.com</a>
+            </div>
+            <p style="margin-top: 25px; color: var(--text-dim);">
+                &copy; 2026 جميع الحقوق محفوظة لـ <strong>4C-Apps</strong><br>
+                صنع بشغف لتطوير المحتوى العربي التقني.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
